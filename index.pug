@@ -1,0 +1,64 @@
+mixin service(data)
+  .about__services-link
+    .about__services_image
+      img.about__services-link-img(src=data.img, alt=data.alt)
+    .about__services_text
+      h3.about__services-link-title= data.title
+      p.about__services-link-desc= data.desc
+
+
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+    link(href="fonts/StyreneAWeb/stylesheet.css", rel="stylesheet", type="text/css")
+    link(rel="stylesheet", href="css/normalize.css")
+    link(rel="stylesheet", href="css/style.css")
+  body
+    header.header
+      .container
+        .header__menu
+          img.menu__logo(src="img/logo3.png", alt="logo")
+          nav.menu__navigation
+            ul.navigation__list
+              li
+                a.navigation__links(href="#") Услуги
+              li
+                a.navigation__links(href="#") Наши работы
+              li
+                a.navigation__links(href="#") Наши клиенты
+              li
+                a.navigation__links(href="#") Отзывы
+              li
+                a.navigation__links(href="#") Контакты
+        .header__desc
+          p.header__advantage ВЕСЬ СПЕКТР ВИДЕО УСЛУГ
+          h1.header__title RGB STUDIO
+          p.header__description Наша студия предлагает своим клиентам весь комплекс услуг по проведению видеосъёмки не только в Ташкенте, но и по всему Узбекистану в форматах HD, FullHD и #[span.header__bold 4К]
+    main.about
+      .container
+        h2.about__services-title Наши услуги
+        .about__services
+          .about__services-row
+            +service({img: "img/services-1.svg", alt: 'services-1', title: "Изготовление роликов", desc: "Имиджевое видео компаний, промо ролики, реклама, обучающее видео. Видеосъемка презентаций, конференций брифингов, спортивных мероприятий и т.д."})
+            +service({img: "img/services-2.svg", alt: 'services-2', title: "Видео трансляция", desc: "Беспроводная много камерная он-лайн трансляция на экраны и на любые площадки в Интернете различных мероприятий под ключ. Охватывает аудиторию в любой точке мира"})
+          .about__services-row
+            +service({img: "img/services-3.svg", alt: 'services-3', title: "Изготовление анимации", desc: "Демонстрируем полезность товара путем оживления вашей идеи в анимированном ролике. Максимально эффектный и привлекательный способ демонстрации вашей услуги или продукта"})
+            +service({img: "img/services-4.svg", alt: 'services-4', title: "Озвучка", desc: "Профессиональная озвучка любых текстов от лучших дикторов СНГ на любых языках. Помогает донести вашу мысль и вызывает доверие. Аудитория запомнит ваш бренд"})
+        .tools
+          .tools__main
+            img.tools__img(src="img/tools.jpg", alt="tools")
+            .tools__text
+              h2.tools__title Техническое оснащение
+              p.tools__desc В работе мы используем: <br><br> - Профессиональные видео камеры от ведущих мировых производителей  <br><br> - Трехосевые системы стабилизации от компании DJI. Обеспечивает лучшую стабилизацию съемки, сглаживание вибраций и тряски, что позволяет получить наилучшую задуманную картинку<br><br> - Для записи и трансляции звука используется немецкое оборудование компании Sennheiser Electronics  <br><br> - Для онлайн трансляции применяются беспроводные видеопередатчики с радиусом действия от 100 до 300 метров, видеомикшер.
+          .tools__list
+            img.tools__link(src="img/tools-1.jpg", alt="tools-1")
+            img.tools__link(src="img/tools-2.jpg", alt="tools-2")
+            img.tools__link(src="img/tools-3.jpg", alt="tools-3")
+            img.tools__link(src="img/tools-4.jpg", alt="tools-4")
+      .projects
+        .container
+          h2.projects__title Наши работы
+          p.projects__desc Мы успешно реализовали более ста проектов для наших клиентов, часть из которых вы можете посмотреть в галерее.

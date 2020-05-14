@@ -1,0 +1,212 @@
+@font-face {
+  font-family: 'Styrene A Web';
+  src: local("Styrene A Web Thin"), local("Styrene-A-Web-Thin");
+  url: "../fonts/StyreneAWeb/StyreneAWeb-Thin.woff2" format("woff2");
+  url: "../fonts/StyreneAWeb/StyreneAWeb-Thin.woff" format("woff");
+  url: "../fonts/StyreneAWeb/StyreneAWeb-Thin.ttf" format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+.navigation__links, .header__advantage, .header__description, .about__services-link-desc, .tools__desc, .projects__desc {
+  font-family: Styrene A Web, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+body, * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1D1D1D), to(rgba(29, 29, 29, 0.39))), url(../img/photo.jpg) center center no-repeat;
+  background: -webkit-linear-gradient(top, #1D1D1D 0%, rgba(29, 29, 29, 0.39) 100%), url(../img/photo.jpg) center center no-repeat;
+  background: -o-linear-gradient(top, #1D1D1D 0%, rgba(29, 29, 29, 0.39) 100%), url(../img/photo.jpg) center center no-repeat;
+  background: linear-gradient(180deg, #1D1D1D 0%, rgba(29, 29, 29, 0.39) 100%), url(../img/photo.jpg) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 60px;
+  margin-bottom: 150px;
+}
+
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navigation__list li {
+  list-style: none;
+  margin-right: 50px;
+}
+
+.navigation__list li:last-child {
+  margin-right: 0;
+}
+
+.navigation__links {
+  text-decoration: none;
+}
+
+.header__desc {
+  text-align: center;
+  max-width: 45%;
+  margin: auto;
+}
+
+.header__advantage {
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.header__title {
+  text-transform: uppercase;
+  font-family: Styrene A Web;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 50px;
+  line-height: 64px;
+  color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 45px;
+}
+
+.header__description {
+  padding-bottom: 160px;
+}
+
+.header__bold {
+  font-weight: bold;
+}
+
+.about {
+  background: #1D1D1D;
+}
+
+.about__services {
+  margin-bottom: 100px;
+}
+
+.about__services-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about__services-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 11px;
+  margin-bottom: 40px;
+  height: 150px;
+  width: 47%;
+}
+
+.about__services-title {
+  font-family: Styrene A Web;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 51px;
+  color: #FFFFFF;
+  padding-top: 70px;
+  margin-bottom: 45px;
+}
+
+.about__services_image {
+  margin-right: 30px;
+}
+
+.about__services-link-title {
+  font-family: Styrene A Web;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+
+.tools__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.tools__img {
+  margin-right: 30px;
+}
+
+.tools__text {
+  padding-top: 50px;
+}
+
+.tools__title {
+  font-family: Styrene A Web;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 51px;
+  color: #FFFFFF;
+  margin-bottom: 35px;
+}
+
+.tools__list {
+  padding-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projects {
+  background: #212429;
+}
+
+.projects__title {
+  font-family: Styrene A Web;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 51px;
+  color: #FFFFFF;
+  padding-top: 70px;
+  margin-bottom: 13px;
+}
+
+.projects__desc {
+  width: 50%;
+  margin-bottom: 30px;
+}
