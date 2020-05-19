@@ -1,8 +1,8 @@
 mixin service(data)
   .about__services-link
-    .about__services_image
+    .about__services-image
       img.about__services-link-img(src=data.img, alt=data.alt)
-    .about__services_text
+    .about__services-text
       h3.about__services-link-title= data.title
       p.about__services-link-desc= data.desc
 
@@ -12,7 +12,7 @@ html(lang="ru")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Document
+    title RGB Studio
     link(href="fonts/StyreneAWeb/stylesheet.css", rel="stylesheet", type="text/css")
     link(rel="stylesheet", href="css/normalize.css")
     link(rel="stylesheet", href="css/style.css")
