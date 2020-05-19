@@ -160,15 +160,14 @@ body, * {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 60px;
 }
 
 .tools__img {
   margin-right: 30px;
-}
-
-.tools__text {
-  padding-top: 50px;
 }
 
 .tools__title {
