@@ -8,7 +8,7 @@
   font-style: normal;
 }
 
-.navigation__links, .header__advantage, .header__description, .about__services-link-desc, .tools__desc, .projects__desc {
+.header__advantage, .header__description, .navigation__links, .about__services-link-desc, .tools__desc, .projects__desc {
   font-family: Styrene A Web, sans-serif;
   font-style: normal;
   font-weight: 100;
@@ -34,11 +34,6 @@ body, * {
   background-attachment: fixed;
 }
 
-.container {
-  width: 90%;
-  margin: auto;
-}
-
 .header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,28 +46,6 @@ body, * {
           align-items: center;
   padding-top: 60px;
   margin-bottom: 150px;
-}
-
-.navigation__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.navigation__list li {
-  list-style: none;
-  margin-right: 50px;
-}
-
-.navigation__list li:last-child {
-  margin-right: 0;
-}
-
-.navigation__links {
-  text-decoration: none;
 }
 
 .header__desc {
@@ -104,6 +77,33 @@ body, * {
 
 .header__bold {
   font-weight: bold;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navigation__list li {
+  list-style: none;
+  margin-right: 50px;
+}
+
+.navigation__list li:last-child {
+  margin-right: 0;
+}
+
+.navigation__links {
+  text-decoration: none;
 }
 
 .about {
@@ -181,7 +181,7 @@ body, * {
 }
 
 .tools__list {
-  padding-bottom: 70px;
+  margin-bottom: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

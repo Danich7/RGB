@@ -25,104 +25,87 @@ body, *
   background: linear-gradient(180deg, #1D1D1D 0%, rgba(29, 29, 29, 0.39) 100%), url(../img/photo.jpg) center center no-repeat
   background-size: cover
   background-attachment: fixed
-  
+  &__menu
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 60px
+    margin-bottom: 150px
+  &__desc
+    text-align: center
+    max-width: 45%
+    margin: auto
+  &__advantage
+    text-transform: uppercase
+    @extend %text
+    margin-bottom: 25px
+  &__title
+    text-transform: uppercase
+    font-family: Styrene A Web
+    font-style: normal
+    font-weight: 100
+    font-size: 50px
+    line-height: 64px
+    color: #FFFFFF
+    margin-top: 0
+    margin-bottom: 45px
+  &__description
+    @extend %text
+    padding-bottom: 160px
+  &__bold
+    font-weight: bold
+
 .container
   width: 90%
   margin: auto
 
-.header__menu
-  display: flex
-  justify-content: space-between
-  align-items: center
-  padding-top: 60px
-  margin-bottom: 150px
-
 .navigation__list
   display: flex
   justify-content: space-between
-
-.navigation__list li
-  list-style: none
-  margin-right: 50px
-
-.navigation__list li:last-child
-  margin-right: 0
-
+  & li 
+    list-style: none
+    margin-right: 50px
+  & li:last-child
+    margin-right: 0
+  
 .navigation__links
   text-decoration: none
   @extend %text
 
-.header__desc
-  text-align: center
-  max-width: 45%
-  margin: auto
-
-.header__advantage
-  text-transform: uppercase
-  @extend %text
-  margin-bottom: 25px
-
-.header__title
-  text-transform: uppercase
-  font-family: Styrene A Web
-  font-style: normal
-  font-weight: 100
-  font-size: 50px
-  line-height: 64px
-  color: #FFFFFF
-  margin-top: 0
-  margin-bottom: 45px
-
-.header__description
-  @extend %text
-  padding-bottom: 160px
-
-.header__bold
-  font-weight: bold
-
 .about
   background: #1D1D1D
-
-.about__services
-  margin-bottom: 100px
-
-.about__services-row
-  display: flex
-
-.about__services-link
-  display: flex
-  margin-right: 11px
-  margin-bottom: 40px
-  height: 150px
-  width: 47%
-
-.about__services-title
-  font-family: Styrene A Web
-  font-style: normal
-  font-weight: 100
-  font-size: 40px
-  line-height: 51px
-  color: #FFFFFF
-  padding-top: 70px
-  margin-bottom: 45px
-
-.about__services_image
-  margin-right: 30px
-
-
-.about__services-link-title
-  font-family: Styrene A Web
-  font-style: normal
-  font-weight: bold
-  font-size: 20px
-  line-height: 26px
-  color: #FFFFFF
-  margin-bottom: 10px
-  padding-top: 20px
-
-.about__services-link-desc
-  @extend %text
-
+  &__services
+    margin-bottom: 100px
+    &-row
+      display: flex
+    &-link
+      display: flex
+      margin-right: 11px
+      margin-bottom: 40px
+      height: 150px
+      width: 47%
+    &-title
+      font-family: Styrene A Web
+      font-style: normal
+      font-weight: 100
+      font-size: 40px
+      line-height: 51px
+      color: #FFFFFF
+      padding-top: 70px
+      margin-bottom: 45px
+    &_image
+      margin-right: 30px
+    &-link-title
+      font-family: Styrene A Web
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 26px
+      color: #FFFFFF
+      margin-bottom: 10px
+      padding-top: 20px
+    &-link-desc
+      @extend %text
 
 .tools__main
   display: flex
@@ -145,24 +128,22 @@ body, *
   @extend %text
 
 .tools__list
-  padding-bottom: 70px
+  margin-bottom: 70px
   display: flex
   justify-content: space-between
 
 .projects
   background: #212429
-
-.projects__title
-  font-family: Styrene A Web
-  font-style: normal
-  font-weight: 100
-  font-size: 40px
-  line-height: 51px
-  color: #FFFFFF
-  padding-top: 70px
-  margin-bottom: 13px
-
-.projects__desc
-  @extend %text
-  width: 50%
-  margin-bottom: 30px
+  &__title
+    font-family: Styrene A Web
+    font-style: normal
+    font-weight: 100
+    font-size: 40px
+    line-height: 51px
+    color: #FFFFFF
+    padding-top: 70px
+    margin-bottom: 13px
+  &__desc
+    @extend %text
+    width: 50%
+    margin-bottom: 30px
