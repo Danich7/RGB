@@ -1,13 +1,3 @@
-@font-face {
-  font-family: 'Styrene A Web';
-  src: local("Styrene A Web Thin"), local("Styrene-A-Web-Thin");
-  url: "../fonts/StyreneAWeb/StyreneAWeb-Thin.woff2" format("woff2");
-  url: "../fonts/StyreneAWeb/StyreneAWeb-Thin.woff" format("woff");
-  url: "../fonts/StyreneAWeb/StyreneAWeb-Thin.ttf" format("truetype");
-  font-weight: 100;
-  font-style: normal;
-}
-
 .header__advantage, .header__description, .navigation__links, .about__services-link-desc, .tools__desc, .projects__desc {
   font-family: Styrene A Web, sans-serif;
   font-style: normal;
@@ -104,6 +94,20 @@ body, * {
 
 .navigation__links {
   text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(currentColor), to(currentColor));
+  background-image: -webkit-linear-gradient(currentColor, currentColor);
+  background-image: -o-linear-gradient(currentColor, currentColor);
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  -webkit-transition: background-size .2s;
+  -o-transition: background-size .2s;
+  transition: background-size .2s;
+}
+
+.navigation__links:hover {
+  background-size: 100% 1px;
 }
 
 .about {
