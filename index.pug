@@ -16,6 +16,8 @@ html(lang="ru")
     link(href="fonts/StyreneAWeb/stylesheet.css", rel="stylesheet", type="text/css")
     link(rel="stylesheet", href="css/normalize.css")
     link(rel="stylesheet", href="css/style.css")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+    script(src="js/scripts.js")
   body
     header.header
       .container
@@ -63,3 +65,17 @@ html(lang="ru")
         .container
           h2.projects__title Наши работы
           p.projects__desc Мы успешно реализовали более ста проектов для наших клиентов, часть из которых вы можете посмотреть в галерее.
+          .tabs
+            ul.tabs__caption
+              li.active Имиджевый ролик
+              li Реклама
+              li Презентация
+              li Трансляция 
+            .tabs__content.active
+              img(src="img/video-1.png", alt="video-1")
+            .tabs__content
+              img(src="img/video-2.png", alt="video-2")
+            .tabs__content
+              img(src="img/video-3.png", alt="video-3")
+            .tabs__content
+              img(src="img/video-1.png", alt="video-4")

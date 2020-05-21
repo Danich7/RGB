@@ -145,3 +145,32 @@ body, *
     @extend %text
     width: 50%
     margin-bottom: 30px
+
+.tabs__caption
+  display: flex
+  & li
+    list-style: none
+    margin-right: 25px
+    margin-bottom: 30px
+    font-family: Styrene A Web
+    font-style: normal
+    font-weight: 100
+    font-size: 16px
+    line-height: 140%
+    color: #FFF
+    padding: 11px 18px
+    border: 1px solid #ffffff
+    cursor: pointer
+    &:hover
+      color: #1D1D1D
+      background: #ffffff
+    &.active
+      color: #1D1D1D
+      background: #ffffff
+      cursor: default
+
+.tabs__content
+  display: none
+
+.tabs__content .active
+  display: block
